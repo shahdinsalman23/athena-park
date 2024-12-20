@@ -1,0 +1,2454 @@
+/* Icons */
+@import url("https://use.fontawesome.com/releases/v5.14.0/css/all.css");
+@import url("https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css");
+@import url("https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp");
+/* Fonts */
+@import url(../fonts/adelia/stylesheet.css);
+@import url("https://fonts.cdnfonts.com/css/eu-alonira");
+@import url("https://fonts.googleapis.com/css2?family=Fondamento&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alike+Angular&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* General Styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style-type: none;
+  font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  color: #fff;
+  background: black;
+}
+
+a {
+  display: inline-block;
+  color: #000;
+  transition: all 300ms ease-in-out;
+}
+
+a:hover,
+a.active {
+  color: var(--color-primary);
+}
+
+i[class^="bx"] {
+  vertical-align: middle;
+}
+
+ul,
+address {
+  margin-bottom: 0;
+}
+
+.imgFluid {
+  max-width: 100%;
+}
+
+.primary-color {
+  color: var(--color-primary);
+}
+
+.section-content .subHeading {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.section-content .heading {
+  font-size: 3.25rem;
+  line-height: 1.1;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.section-content p {
+  color: #666;
+  line-height: 2;
+}
+
+.section-content span {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.themeBtn {
+  width: fit-content;
+  display: block;
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid #000;
+  padding: 0.75rem 2rem;
+  margin: 0.25rem 0;
+  transition: all 300ms ease-in-out;
+}
+
+.themeBtn--full {
+  width: 100%;
+}
+
+.themeBtn--center {
+  margin: 0.25rem auto;
+}
+
+.themeBtn:hover {
+  color: #fff;
+  background: var(--color-primary);
+  border-color: #fff;
+  transform: translateY(-5px);
+}
+
+/******** Header CSS Start *********/
+
+header.header_main {
+  background: url(../images/header-background.png);
+  padding: 20px 0px;
+}
+
+.header-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.header-nav ul li a {
+  font-family: "Fondamento";
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  font-size: 15px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-align: center;
+}
+
+.header-end ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5px;
+  height: 100%;
+  padding: 10px 0px 0px 0px;
+}
+
+.header-end ul li {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-end ul li a {
+  position: relative;
+  color: black;
+  z-index: 1;
+  font-size: 22px;
+  line-height: 41px;
+  height: 45px;
+  width: 45px;
+  border-radius: 30px;
+  margin: 5px;
+  text-align: center;
+  transition: all 0.6s ease;
+  background: #e48cc3;
+  border: 1px solid #e48cbf;
+}
+
+.header-end ul li a:hover {
+  color: #e48cbf;
+  background: transparent;
+}
+
+.header-logo img {
+  width: 130px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.header-nav ul li {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0px 0px 0px;
+}
+
+.header-end {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+/******** Header CSS End *********/
+
+/******** Home Page CSS Start *********/
+.home_first_banner {
+  background: url(../images/home-banner-background.png);
+  height: 100%;
+  width: 100%;
+  background-position: center top;
+  padding: 0px 0px;
+  background-repeat: no-repeat;
+  position: relative;
+  margin: 0px 0px 50px 0px;
+}
+
+/* .home_first_banner::before {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  background-image: linear-gradient(
+    113.28deg,
+    rgba(150, 111, 214, 0.83) -1.65%,
+    rgba(255, 142, 195, 0.83) 49.56%,
+    rgba(64, 225, 209, 0.83) 102.86%
+  );
+  height: 100%;
+  width: 100%;
+  top: 0;
+  animation-name: homelayer;
+  animation-duration: 4s;
+} */
+
+.home_first_banner::before {
+  position: absolute;
+  content: "";
+  background: transparent;
+  background-image: linear-gradient(113.28deg,
+      rgba(150, 111, 214, 0.83) -1.65%,
+      rgba(255, 142, 195, 0.83) 49.56%,
+      rgba(64, 225, 209, 0.83) 102.86%);
+  animation-name: background2;
+  animation-duration: 4s;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+@keyframes background2 {
+  0% {
+    background-image: rgba(150, 111, 214, 0.83) -1.65%;
+  }
+
+  25% {
+    background-image: rgba(255, 142, 195, 0.83) 49.56%;
+  }
+
+  50% {
+    background-image: rgba(64, 225, 209, 0.83) 102.86%;
+  }
+
+  75% {
+    background-image: rgba(150, 111, 214, 0.83) -1.65%;
+  }
+
+  100% {
+    background-image: rgba(255, 142, 195, 0.83) 49.56%;
+  }
+}
+
+/* @keyframes homelayer {
+  0% {
+    background-color: rgba(150, 111, 214, 0.83) -1.65%;
+  }
+  25% {
+    background-color: rgba(255, 142, 195, 0.83) 49.56%;
+  }
+  50% {
+    background-color: rgba(64, 225, 209, 0.83) 102.86%;
+  }
+  75% {
+    background-color: rgba(150, 111, 214, 0.83) -1.65%;
+  }
+  100% {
+    background-color: rgba(255, 142, 195, 0.83) 49.56%;
+  }
+} */
+
+.home-banner-image img {
+  width: 100%;
+  filter: drop-shadow(10px 0px 9px rgba(0, 0, 0, 0.25));
+}
+
+.home-banner-txt {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.home-banner-txt h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 62px;
+  text-align: justify;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.home-banner-txt h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 97px;
+  line-height: 60px;
+  padding: 8px 0px 24px 0px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.home-banner-txt P {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.home-second-img img {
+  width: 100%;
+  padding: 10px;
+}
+
+.home-second-banner {
+  padding: 50px 0px;
+}
+
+.home-second-txt h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 62px;
+  text-transform: capitalize;
+  color: #cf7074;
+}
+
+.home-second-txt h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 70px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #2b2b2b;
+  padding: 10px 0px 20px 0px;
+}
+
+.home-second-txt P {
+  font-family: "Alike Angular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 37px;
+  line-height: 46px;
+  text-transform: capitalize;
+  color: #636363;
+}
+
+.home-second-txt span {
+  display: block;
+}
+
+.theme-btn {
+  background: linear-gradient(113.28deg,
+      #966fd6 -1.65%,
+      #ff8ec3 49.56%,
+      #40e1d1 102.86%);
+  border-radius: 13px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #353535;
+  padding: 18px 24px;
+  position: relative;
+  width: 305px;
+  text-transform: uppercase;
+  transition: all 0.6s ease;
+}
+
+.theme-btn:hover {
+  animation-name: background;
+  animation-duration: 4s;
+  transition: all 0.6s ease;
+}
+
+@keyframes background {
+  0% {
+    background: #966fd6;
+  }
+
+  25% {
+    background: #ff8ec3;
+  }
+
+  50% {
+    background: #40e1d1;
+  }
+
+  75% {
+    background: #966fd6;
+  }
+
+  100% {
+    background: #ff8ec3;
+  }
+}
+
+.theme-btn::before {
+  position: absolute;
+  content: "";
+  background: rgba(2, 2, 2, 0.6);
+  filter: blur(10.5px);
+  bottom: -6px;
+  transition: all 0.6s ease;
+  z-index: -1;
+  left: 5px;
+  width: 292px;
+  height: 35px;
+  border-radius: 100%;
+}
+
+p.extra-txt {
+  font-family: "Alike Angular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 31px;
+  text-transform: capitalize;
+  color: #898989;
+  margin: 40px 0px 0px 0px;
+}
+
+.home-second-txt {
+  padding: 20px 0px 0px 0px;
+}
+
+.home-third-txt {
+  text-align: center;
+}
+
+section.home-third-banner {
+  padding: 80px 0px;
+}
+
+.home-third-txt h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 62px;
+  text-transform: capitalize;
+  color: #cf7074;
+}
+
+.home-third-txt h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #323232;
+}
+
+.home-third-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #717070;
+}
+
+.home-third-img img {
+  width: 100%;
+}
+
+.img-banner-abslt img {
+  width: 122px;
+}
+
+.home-third-img {
+  position: relative;
+  margin: 0px 0px 50px 0px;
+}
+
+.img-banner-abslt {
+  position: absolute;
+  bottom: 40px;
+  left: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.img-banner-abslt h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: left;
+}
+
+.movie-slider-img img {
+  width: 100%;
+}
+
+.movie-slider .slick-track {
+  height: 130px;
+}
+
+.home-third-banner {
+  text-align: center;
+}
+
+.biography-img img {
+  width: 100%;
+}
+
+section.biography {
+  padding: 60px 0px 120px 0px;
+}
+
+.biography-txt h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 62px;
+  text-align: justify;
+  text-transform: capitalize;
+  color: #cf7074;
+}
+
+.biography-txt h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 69px;
+  text-transform: uppercase;
+  color: #323232;
+}
+
+.biography-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 46px;
+  text-align: justify;
+  text-transform: capitalize;
+  color: #717070;
+}
+
+.events_title h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  color: #000000;
+  margin: 0;
+  padding: 0px 0px 5px 0px;
+}
+
+.events_title h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #313030;
+  margin: 0;
+}
+
+.events_title {
+  width: 100%;
+  padding: 20px 0px 30px 0px;
+}
+
+.events_title a {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #ff84a3;
+  text-decoration: underline !important;
+  position: relative;
+}
+
+.upcoming-event-txt h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  text-transform: uppercase;
+  color: #ff8ec3;
+}
+
+.upcoming-event-txt h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+  letter-spacing: 0.18125px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.upcoming-event-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 38px;
+  text-align: justify;
+  text-transform: capitalize;
+  color: #717070;
+}
+
+section.upcoming-event {
+  padding: 90px 0px 50px 0px;
+}
+
+.event_img img {
+  width: 100%;
+  transition: all 0.6s ease;
+}
+
+.event_img {
+  border-radius: 10px;
+  width: 100%;
+  overflow: hidden;
+  margin: 20px 0px 0px 0px;
+}
+
+.event_img img:hover {
+  transform: scale(1.2);
+}
+
+.events_title a::before {
+  position: absolute;
+  content: "";
+  background: #ff84a3;
+  height: 0px;
+  width: 93px;
+  z-index: -1;
+  bottom: 6px;
+  left: 0;
+  transition: all 0.6s ease;
+}
+
+.events_title a:hover:before {
+  height: 20px;
+}
+
+.events_title a:hover {
+  color: white;
+  text-decoration: none !important;
+}
+
+h5.txt-inner-img {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0.11;
+  position: absolute;
+  z-index: -1;
+  bottom: 155px;
+  left: 40px;
+}
+
+.follow-athena-txt {
+  text-align: center;
+}
+
+.follow-athena-txt h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 62px;
+  text-transform: capitalize;
+  color: #ff8ec3;
+}
+
+.follow-athena-txt h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #2d2d2d;
+}
+
+.follow-athena-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #717070;
+  padding: 0px 0px 20px 0px;
+}
+
+.follow-athena-txt h1 {
+  transition: all 0.3s ease-in-out;
+  font-family: "Oswald";
+  font-style: normal;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #2d2d2d;
+}
+
+p.follow-para-two {
+  font-family: "Alike Angular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 31px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #898989;
+  padding: 30px 0px 0px 0px;
+}
+
+.follow-athena-park {
+  padding: 50px 0px 100px 0px;
+}
+
+.latest-album-txt {
+  text-align: center;
+}
+
+.other-companies {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0px 0px 50px 0px;
+}
+
+.latest-album-txt h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 62px;
+  text-transform: capitalize;
+  color: #ff8ec3;
+}
+
+.latest-album-txt h2 {
+  font-family: "Eu Alonira";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 66px;
+  text-transform: capitalize;
+  color: #ffff;
+}
+
+.music-company img {
+  mix-blend-mode: screen;
+}
+
+.latest-album {
+  background: url(../images/latest-album.png);
+  padding: 50px 0px;
+}
+
+.latest-album-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #717070;
+}
+
+.music-player {
+  padding: 20px;
+  text-align: center;
+  background: #141414;
+  border-radius: 10px;
+}
+
+.music-img img {
+  width: 100%;
+}
+
+.music-player p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ffffff;
+  padding: 20px 0px 5px 0px;
+}
+
+.refresh-btn {
+  color: #fff;
+  font-size: 30px;
+}
+
+.previous-btn {
+  border: 1px solid #ff8ec3;
+  border-radius: 40px;
+  padding: 10px 16px;
+  color: #ff8ec3;
+  font-size: 20px;
+  background: transparent;
+  transition: all 0.3s ease;
+}
+
+.music-playerbtns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 10px;
+  padding: 10px 0px 0px 0px;
+}
+
+.play-btn {
+  opacity: 1;
+  border-radius: 40px;
+  font-size: 20px;
+  padding: 15px 20px;
+  color: white;
+  border: 5px solid grey;
+  background: linear-gradient(180deg,
+      rgba(255, 255, 255, 0) 0.03%,
+      rgba(255, 255, 255, 0.07) 6.03%,
+      rgba(255, 255, 255, 0.56) 53.02%,
+      rgba(255, 255, 255, 0.88) 85%,
+      #ffffff 100%);
+}
+
+.shuffle-btn {
+  font-size: 20px;
+  color: #fff;
+}
+
+.previous-btn:hover {
+  background: #ff8ec3;
+  color: black;
+}
+
+.refresh-btn:hover {
+  color: white;
+}
+
+.shuffle-btn:hover {
+  color: white;
+}
+
+.music-player h6 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 42px;
+  text-transform: capitalize;
+  color: #ff8ec3;
+  padding: 20px 0px 0px 0px;
+  margin: 0;
+}
+
+.duration input[type="range"] {
+  width: 100%;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.range-slider {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  border-radius: 15px;
+  background: white;
+  margin: 10px 0px;
+}
+
+.range-slider .progress {
+  position: absolute;
+  left: 0;
+  right: 0%;
+  height: 100%;
+  border-radius: 15px;
+  background: transparent linear-gradient(90deg, #e4e7c1 0%, #d39892 100%) 0% 0% no-repeat padding-box;
+}
+
+.range-slider input[type="range"] {
+  position: absolute;
+  width: 100%;
+  height: 7px;
+  left: 0;
+  pointer-events: none;
+  background: none;
+  outline: none;
+}
+
+.range-slider .range-min::-webkit-slider-thumb {
+  pointer-events: auto;
+  -webkit-appearance: none;
+  width: 50px;
+  height: 12px;
+  background: #ff8ec3;
+  border-radius: 15px;
+  opacity: 1;
+  left: 0;
+}
+
+span.range-min-wrapper {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.next-song p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 62px;
+  /* identical to box height, or 388% */
+  text-align: justify;
+  text-transform: capitalize;
+  color: #ffffff;
+  margin: 0;
+  padding: 10px 0px 0px 0px;
+}
+
+.next-song-player {
+  display: flex;
+  width: 100%;
+  background: #232323;
+  margin: 10px 0px 20px 0px;
+}
+
+.next-song {
+  width: 100%;
+  padding: 0px 0px 0px 20px;
+  border-radius: 0px 0px 11px 0px;
+}
+
+.play-pausebtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px 10px 10px 10px;
+}
+
+div#track-time {
+  display: flex;
+  color: #fff;
+  gap: 10px;
+  padding: 10px 0px 0px 0px;
+}
+
+.park-interview-txt h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 62px;
+  text-transform: capitalize;
+  color: #ff8ec3;
+}
+
+.park-interview-txt {
+  text-align: center;
+}
+
+.park-interview-txt h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #323232;
+}
+
+.park-interview-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #717070;
+}
+
+/******** Home Page CSS End *********/
+
+/******** Footer CSS Start *********/
+
+footer.footer-main {
+  background: url(../images/footer-background.png);
+  padding: 30px 0px 0px 0px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-nav ul li a {
+  font-family: "Fondamento";
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.footer-nav {
+  padding: 30px 0px 20px 0px;
+  position: relative;
+}
+
+.footer-end ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 5px;
+  height: 100%;
+  padding: 10px 0px 0px 0px;
+}
+
+.footer-end ul li {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 12px;
+}
+
+.footer-end ul li a {
+  position: relative;
+  color: black;
+  font-size: 24px;
+  width: 100%;
+  z-index: 1;
+  border-radius: 30px;
+  padding: 4px 1px 4px 0px;
+  text-align: center;
+  transition: all 0.6s ease;
+  background: #e48cc3;
+  border: 1px solid #e48cbf;
+}
+
+.footer-end ul li a:hover {
+  color: #e48cbf;
+  background: transparent;
+}
+
+.footer-end {
+  height: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+.subscribe-input input {
+  background: #d9d9d9;
+  border-radius: 10px;
+  width: 407px;
+  height: 53px;
+  padding: 10px 20px;
+  border: none;
+}
+
+.subscribe-input {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: end;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  padding: 50px 0px 0px 0px;
+}
+
+.subscribe-input input:focus {
+  outline: none;
+}
+
+.subscribe-input p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 27px;
+  /* or 193% */
+  color: #ffffff;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0;
+  padding: 10px 0px 0px 0px;
+}
+
+.footer-nav::before {
+  position: absolute;
+  content: "";
+  background: #979797;
+  width: 105%;
+  height: 1px;
+  right: -30px;
+  bottom: -15px;
+}
+
+.subscribe-input span {
+  cursor: pointer;
+  position: absolute;
+  background: linear-gradient(113.28deg,
+      #966fd6 -1.65%,
+      #ff8ec3 49.56%,
+      #40e1d1 102.86%);
+  color: black;
+  border-radius: 10px;
+  padding: 6px 34px;
+  transition: all 0.3s ease-in-out;
+  font-size: 26px;
+  top: 50px;
+  right: 0;
+  border: 1px solid white;
+}
+
+.copyright p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.copyright {
+  text-align: center;
+  padding: 50px 0px 20px 0px;
+  position: relative;
+}
+
+.copyright::before {
+  position: absolute;
+  content: "";
+  background: #979797;
+  width: 105%;
+  height: 1px;
+  right: -33px;
+  top: 30px;
+}
+
+/* swiper-slider-css-begin */
+.video-slider .col-lg-4 {
+  padding: 0;
+  transition: all 0.6s ease;
+}
+
+.video-slider .slick-center .park-interview-img {
+  height: 330px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-slider .slick-center .park-interview-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.6s ease;
+}
+
+.park-interview-img {
+  display: flex;
+  height: 330px;
+  transition: all 0.6s ease;
+  align-items: center;
+}
+
+.park-interview-img span {
+  position: absolute;
+  cursor: pointer;
+  font-size: 80px;
+  color: #ed7dbecf;
+  transition: all 0.6s ease;
+  opacity: 0;
+}
+
+.video-slider {
+  overflow: hidden;
+}
+
+.ct-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.park-interview-img span:hover {
+  color: #f98cc4;
+}
+
+.video-slider .slick-center .park-interview-img span {
+  opacity: 1;
+}
+
+/* swiper-slider-css-end */
+
+/* modifeid_css_begin */
+.theme-btn:hover:before {
+  filter: blur(1);
+}
+
+.footer-nav ul li a:before {
+  width: 0;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  height: 2px;
+  transition: all 0.6s ease;
+  background: #e48cc3;
+  content: "";
+  bottom: -5px;
+}
+
+.footer-nav ul li a:hover:before {
+  width: 100%;
+}
+
+.footer-nav ul li a:hover {
+  color: #e48cc3;
+}
+
+.footer-end ul li a::before {
+  width: 0;
+  transition: all 0.6s ease;
+  height: 0;
+  background: white;
+  content: "";
+  position: absolute;
+  z-index: -1;
+  border-radius: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.footer-end ul li a:hover:before {
+  width: 100%;
+  height: 100%;
+}
+
+.follow-athena-txt h1:hover {
+  color: #e48cc3 !important;
+}
+
+.subscribe-input span:hover {
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+}
+
+.follow-athena-img {
+  width: 100%;
+  height: 180px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.follow-athena-img img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.follow-athena-img:hover img {
+  transform: scale(1.3);
+}
+
+header.header_main .container {
+  max-width: 1280px;
+}
+
+header.header_main .col-lg-6 {
+  padding: 0;
+}
+
+.header-logo {
+  text-align: end;
+}
+
+.header-nav ul li a::before {
+  width: 0;
+  left: 50%;
+  transform: translate(-50%);
+  position: absolute;
+  height: 2px;
+  transition: all 0.6s ease;
+  background: #e48cc3;
+  content: "";
+  bottom: 0;
+}
+
+.header-nav ul li a:hover:before {
+  width: 100%;
+}
+
+.header-nav ul li a:hover {
+  color: #ff8ec3;
+}
+
+.header-end ul li a:before {
+  width: 0;
+  transition: all 0.3s ease-in-out;
+  height: 0;
+  background: white;
+  content: "";
+  position: absolute;
+  border-radius: 100%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  top: 50%;
+}
+
+.header-end ul li a:hover:before {
+  height: 90%;
+  width: 90%;
+}
+
+/* modifeid_css_begin */
+/******** Footer CSS End *********/
+
+/******** Biography Page CSS Start *********/
+
+.biography-banner {
+  background: url(../images/biography-banner-img.png);
+  height: 458px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.biography-banner::before {
+  content: "";
+  position: absolute;
+  background: linear-gradient(113.28deg,
+      rgba(150, 111, 214, 0.5) -1.65%,
+      rgba(255, 142, 195, 0.5) 49.56%,
+      rgba(64, 225, 209, 0.5) 102.86%);
+  width: 100%;
+  height: 458px;
+}
+
+.biography-banner-txt {
+  padding: 170px 0px 0px 0px;
+  text-align: center;
+}
+
+.biography-banner-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #fbf2f2;
+  mix-blend-mode: normal;
+}
+
+.biography-banner-txt h4 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 120px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0px 0px 50px 0px;
+}
+
+.biography-txts h6 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 62px;
+  text-align: justify;
+  text-transform: capitalize;
+  color: #cf7074;
+}
+
+.biography-sec {
+  padding: 100px 0px 50px 0px;
+  position: relative;
+}
+
+.biography-txts h4 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 52px;
+  line-height: 69px;
+  text-transform: uppercase;
+  color: #323232;
+}
+
+.biography-txts {
+  width: 100%;
+}
+
+.biography-txts p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 30px;
+  text-align: justify;
+  text-transform: capitalize;
+  color: #717070;
+}
+
+.overview-txt {
+  background: #f2f1f1;
+  box-shadow: 0px 0px 9px 3px rgba(0, 0, 0, 0.25);
+  border-radius: 11px;
+  z-index: 999999;
+  padding: 30px 20px 35px 20px;
+  margin: -60px -60px 0px 60px;
+  position: relative;
+}
+
+.biography-img {
+  width: 100%;
+}
+
+.overview-txt h4 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: #323232;
+}
+
+.overview-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #343434;
+  margin: 0;
+}
+
+.overview-txt p strong {
+  padding: 0px 20px 0px 0px;
+}
+
+.trivia-txt h4 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 69px;
+  text-transform: uppercase;
+  color: #323232;
+}
+
+.trivia-txt p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: justify;
+  text-transform: capitalize;
+  color: #717070;
+  margin: 0px 0px 30px 0px;
+}
+
+.subcribe {
+  padding: 70px 0px 120px 0px;
+}
+
+.subcribe-img img {
+  width: 100%;
+}
+
+.subcribe-txt h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 62px;
+  text-align: justify;
+  text-transform: capitalize;
+  color: #ff8ec3;
+}
+
+.subcribe-txt h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 64px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #2b2b2b;
+}
+
+.subcribe-txt p {
+  font-family: "Sulphur Point";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 38px;
+  line-height: 38px;
+  color: #262626;
+  padding: 20px 0px 20px 0px;
+}
+
+.input-field input {
+  display: block;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 3px solid #373737;
+  border-radius: 10px;
+  padding: 20px 10px;
+}
+
+.input-field {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.input-field h6 {
+  background: linear-gradient(113.28deg,
+      #966fd6 -1.65%,
+      #ff8ec3 49.56%,
+      #40e1d1 102.86%);
+  border-radius: 7px;
+  padding: 17px 70px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ffffff;
+  margin: 0;
+  position: absolute;
+  right: 3px;
+  transition: all 0.6s ease;
+}
+
+.input-field h6:hover {
+  border: 1px solid black;
+  background: transparent;
+  color: black;
+}
+
+.subcribe-txt {
+  padding: 70px 0px 0px 0px;
+}
+
+.input-field input::placeholder {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  color: #c5baba;
+}
+
+section.gallery {
+  padding: 80px 0px;
+  overflow: hidden;
+}
+
+.play-demo-img {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.play-demo-img img {
+  width: 80px;
+}
+
+.play-demo-img h1 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: left;
+}
+
+.gallery-img img {
+  width: 100%;
+}
+
+.gallery-img img {
+  width: 100%;
+  margin: 10px 0px 0px 0px;
+  filter: drop-shadow(8px 11px 11px rgba(0, 0, 0, 0.25));
+  border-radius: 10px;
+}
+
+.gallery h3 {
+  font-family: "adelia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 62px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #ff8ec3;
+}
+
+.gallery h2 {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 60px;
+  line-height: 66px;
+  text-transform: uppercase;
+  color: #2d2d2d;
+  text-align: center;
+}
+
+.gallery p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #717070;
+  padding: 0px 0px 30px 0px;
+}
+
+.simple-gal-img img {
+  width: 100%;
+  margin: 0px 0px 40px 0px;
+}
+
+.gallery-simple {
+  padding: 50px 0px;
+}
+
+.audio-player-sec {
+  padding: 50px 0px;
+}
+
+.audio-player {
+  background: url(../images/audio-player-banner.png);
+  height: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.audio-player::before {
+  position: absolute;
+  content: "";
+  background: #141414;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+.audio-img img {
+  width: 100%;
+  padding: 30px;
+}
+
+.audio-player-txt h3 {
+  font-family: 'adelia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 62px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FF8EC3;
+}
+
+.audio-player-txt {
+  padding: 110px 0px 40px 0px;
+}
+
+.audio-player-txt h2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.audio-line {
+  width: 100%;
+  text-align: center;
+  padding: 0px 0px 30px 0px;
+}
+
+.audio-line input {
+  width: 466px;
+}
+
+.athena-head h2 {
+  font-family: 'adelia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 62px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #FF8EC3;
+}
+
+.athena-head {
+  padding: 80px 0px 0px 0px;
+}
+
+
+/********** Sidebar Navigation CSS Start ***********/
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+}
+
+
+.sidenav a {
+  padding: 8px 8px 8px 8px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+  font-family: 'Fondamento';
+}
+
+.sidenav a:hover {
+  color: #e48cc3;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  color: #fff;
+}
+
+.sidenav .closebtn:hover {
+  color: #fff;
+}
+
+/********** Sidebar Navigation CSS End ***********/
+
+
+
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+
+@media screen and (max-width: 1280px) {}
+
+@media screen and (max-width: 786px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 20px;
+    color: #fff;
+  }
+
+  .header_main .container .row .col-lg-6 {
+    display: none;
+  }
+
+  .header-logo {
+    text-align: start;
+  }
+
+  .header-end ul li a {
+    line-height: 30px;
+    height: 35px;
+    width: 35px;
+  }
+
+  .header-end ul li {
+    width: auto;
+  }
+
+  .header-end ul {
+    padding: 0px 0px 0px 0px;
+    justify-content: end;
+  }
+
+
+  .home_first_banner {
+    padding: 40px 0px;
+    margin: 0px;
+  }
+
+  .home-second-txt h3 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+
+  .home-second-txt h2 {
+    font-size: 60px;
+    line-height: 28px;
+  }
+
+
+  .home-second-txt P {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .theme-btn {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 12px 14px;
+    width: 225px;
+  }
+
+  .theme-btn::before {
+    left: 0px;
+    width: 225px;
+  }
+
+  p.extra-txt {
+    font-size: 14px;
+    line-height: 28px;
+    margin: 20px 0px 0px 0px;
+  }
+
+  section.home-third-banner {
+    padding: 50px 0px;
+  }
+
+  .home-banner-txt h2 {
+    font-size: 68px;
+    line-height: 30px;
+  }
+
+  .img-banner-abslt {
+    bottom: 20px;
+    left: 20px;
+  }
+
+
+  .img-banner-abslt h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .img-banner-abslt img {
+    width: 115px;
+  }
+
+  .movie-slider {
+    height: 180px;
+  }
+
+  .biography-txt h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .biography-txt h2 {
+    font-size: 38px;
+    line-height: 46px;
+  }
+
+  .biography-txt p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+
+
+  .music-player {
+    padding: 40px;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .park-interview-txt p br {
+    display: none;
+  }
+
+  .follow-athena-txt p br {
+    display: none;
+  }
+
+  .video-slider .slick-center .park-interview-img {
+    height: 280px;
+  }
+
+  .subscribe-input input {
+    width: 100%;
+  }
+
+  .subscribe-input span {
+    top: 30px;
+  }
+
+  .subscribe-input {
+    padding: 30px 0px 0px 0px;
+  }
+
+  .footer-end ul {
+    padding: 40px 0px 0px 0px;
+  }
+
+  .footer-end ul li a {
+    font-size: 30px;
+    border-radius: 60px;
+    padding: 8px 0px 10px 0px;
+  }
+
+  .footer-nav::before {
+    width: 100%;
+    right: 0px;
+  }
+
+
+  .header-end {
+    gap: 20px;
+    align-items: center;
+  }
+
+  .header-end span {
+    color: #fff;
+    font-size: 32px;
+  }
+
+  .overview-txt {
+    margin: -60px -60px 0px 60px;
+    width: 90%;
+    bottom: 60px;
+  }
+
+  .biography-sec {
+    padding: 100px 0px 0px 0px;
+  }
+
+
+  .audio-player-txt h3 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .audio-player-txt h2 {
+    font-size: 30px;
+    line-height: 38px;
+  }
+
+  .audio-line input {
+    width: 380px;
+  }
+
+  .play-btn {
+    font-size: 16px;
+    padding: 13px 18px;
+  }
+
+  .previous-btn {
+    padding: 9px 13px;
+    font-size: 14px;
+  }
+
+  .athena-head h2 {
+    font-size: 26px;
+    line-height: 32px;
+  }
+
+  .music-playerbtns {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .audio-img img {
+    padding: 20px 0px 0px 20px;
+  }
+
+  .audio-player-txt {
+    padding: 20px 0px 10px 0px;
+  }
+
+  .audio-line {
+    padding: 0px 0px 10px 0px;
+  }
+
+  .athena-head {
+    padding: 30px 0px 30px 0px;
+  }
+
+  .footer-nav ul li a {
+    font-size: 18px;
+  }
+
+  .copyright::before {
+    width: 100%;
+    right: 0px;
+    top: 15px;
+  }
+
+  .copyright {
+    padding: 30px 0px 20px 0px;
+  }
+
+
+  .subscribe-input p {
+    padding: 30px 0px 0px 0px;
+  }
+
+  .home-second-banner {
+    display: block;
+  }
+
+
+  .input-field input {
+    border: 2px solid #373737;
+    padding: 12px 20px;
+  }
+
+  .subcribe-txt h2 {
+    font-size: 42px;
+    line-height: 47px;
+    margin: 0px;
+  }
+
+  .subcribe-txt h3 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+
+  .subcribe-txt p {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 14px 0px 14px 0px;
+    margin: 0px;
+  }
+
+  .input-field h6 {
+    padding: 9px 36px;
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+    right: 2px;
+  }
+
+  .subcribe-txt {
+    padding: 0px 0px 0px 0px;
+  }
+
+
+}
+
+@media screen and (max-width: 600px) {
+  .footer-nav ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-end ul li {
+    margin: 0px 0px;
+  }
+
+  .footer-end ul li a {
+    font-size: 24px;
+    padding: 4px 0px 4px 0px;
+  }
+
+  .subcribe-txt {
+    padding: 50px 0px 0px 0px;
+    text-align: center;
+  }
+
+  .subcribe-txt h3 {
+    text-align: center;
+  }
+
+  .biography-banner-txt {
+    padding: 150px 0px 0px 0px;
+  }
+
+  .biography-banner-txt h4 {
+    font-size: 70px;
+    padding: 0px 0px 20px 0px;
+  }
+
+  .biography-banner-txt p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .header-logo {
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .home-second-txt {
+    text-align: center !important;
+  }
+
+  .home-second-txt h2 {
+    font-size: 50px;
+    line-height: 18px;
+  }
+
+  .follow-athena-txt h1 {
+    font-size: 40px;
+    line-height: 46px;
+  }
+
+  .follow-athena-park {
+    padding: 50px 0px 60px 0px;
+  }
+
+  .gallery-img img {
+    padding: 10px 20px;
+  }
+
+  .gallery p br {
+    display: none;
+  }
+
+  .gallery p {
+    padding: 0px 20px;
+  }
+
+  .img-banner-abslt h1 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0px;
+  }
+
+  .img-banner-abslt img {
+    width: 55px;
+  }
+
+  .img-banner-abslt {
+    bottom: 15px;
+    left: 10px;
+    gap: 10px;
+  }
+
+  .play-demo-img img {
+    width: 55px;
+  }
+
+  .play-demo-img h1 {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0px;
+  }
+
+  .play-demo-img {
+    bottom: 15px;
+    left: 10px;
+    gap: 8px;
+  }
+
+
+  .movie-slider {
+    height: 270px;
+  }
+
+  .audio-line input {
+    width: 260px;
+  }
+
+  .audio-img img {
+    padding: 20px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+
+
+  .audio-player-txt h2 {
+    font-size: 27px;
+    line-height: 32px;
+  }
+
+  .biography-sec {
+    padding: 50px 0px 0px 0px;
+    text-align: center;
+  }
+
+  .biography-txts h6 {
+    font-size: 20px;
+    line-height: 42px;
+  }
+
+  .biography-txts h4 {
+    font-size: 35px;
+    line-height: 42px;
+    color: #000;
+  }
+
+  .biography-txts p {
+    font-size: 16px;
+    line-height: 23px;
+    text-align: center;
+  }
+
+  .overview-txt p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .trivia-txt p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #717070;
+    margin: 0px 0px 10px 0px;
+    text-align: center;
+  }
+
+  .overview-txt {
+    margin: -60px -60px 0px 20px;
+    width: 90%;
+    bottom: 60px;
+    padding: 15px 10px 25px 10px;
+  }
+
+  .home-banner-txt h2 {
+    font-size: 58px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .home-banner-txt {
+    text-align: center;
+    margin: 0px 0px 30px 0px;
+  }
+
+  .home-banner-txt h3 {
+    color: #ffffff;
+    text-align: center;
+    width: 100%;
+  }
+
+  .home-banner-image img {
+    border-radius: 20px;
+  }
+
+  .biography-img {
+    margin: 0px 0px 40px 0px;
+  }
+
+  .biography-txt {
+    text-align: center;
+  }
+
+  .biography-txt h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .biography-txt h3 {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .other-companies {
+    grid-template-columns: auto auto;
+  }
+
+  .next-song-player {
+    margin: 10px 0px 20px 0px;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+  div#track-time {
+    justify-content: center;
+  }
+
+
+  .next-music-img img {
+    border-radius: 20px;
+  }
+
+  section.upcoming-event {
+    padding: 60px 0px 50px 0px;
+  }
+
+  .upcoming-event-txt h2 {
+    font-size: 38px;
+    line-height: 40px;
+  }
+
+  .upcoming-event-txt h3 {
+    font-size: 16px;
+    line-height: 42px;
+    text-align: center;
+  }
+
+
+  .upcoming-event-txt p {
+    font-size: 15px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .upcoming-event-txt {
+    text-align: center;
+  }
+
+
+  .events_title {
+    text-align: center;
+  }
+
+  .events_title h2 {
+    font-size: 26px;
+    padding: 0px 0px 6px 0px;
+  }
+
+  .events_title h4 {
+    font-size: 12px;
+  }
+
+  .follow-athena-txt h3 {
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+
+}

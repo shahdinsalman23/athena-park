@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'adelia';
+    src: url('adelia.eot');
+    src: url('adelia.eot?#iefix') format('embedded-opentype'),
+        url('adelia.woff2') format('woff2'),
+        url('adelia.woff') format('woff'),
+        url('adelia.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'adelia';
+    src: url('adelia_1.eot');
+    src: url('adelia_1.eot?#iefix') format('embedded-opentype'),
+        url('adelia_1.woff2') format('woff2'),
+        url('adelia_1.woff') format('woff'),
+        url('adelia_1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
